@@ -1,0 +1,1 @@
+file projects.ipynb itu versi ipynb dari file.py, isi sama.
