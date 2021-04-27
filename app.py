@@ -1,7 +1,8 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request
 import pickle
 import pandas as pd
 import numpy as np
+import os
 
 app = Flask(__name__)
 
@@ -10,7 +11,6 @@ X_test = pd.read_excel('exampleTest.xlsx')
 X_test = X_test.drop("Unnamed: 0",axis=1)
 filename = 'finalized_model.sav'
 loaded_model = pickle.load(open(filename, 'rb'))
-
 
 labels = ['Benda Hidup dan Tak Hidup di Sekitar Kita',
  'Bumi sebagai Bagian dari Tata Surya' ,'Dasar untuk menjadi Ilmuan',
@@ -29,11 +29,31 @@ labels = ['Benda Hidup dan Tak Hidup di Sekitar Kita',
  'Susunan Kelompok Makhluk Hidup yang saling Berinteraksi']
  
 #use it for prediction
-results = pd.DataFrame(np.round(loaded_model.predict_proba(X_test)*100, 2), columns=labels)
 
-@app.route('/')
+@app.route('/', methods=['post','get'])
 
 def index():
+    results = pd.DataFrame(np.round(loaded_model.predict_proba(X_test)*100, 2), columns=labels)
+    if request.method == 'POST' :
+        arrval = []
+        for i in range(11) :
+            arrval.append(request.form.get('kd'+str(i+1)))
+        dict_ = {}
+        for j in range(11) :
+            xy = { 'KD'+str(j+1) : [arrval[j]]}
+            dict_.update(xy)
+        
+        request_ = pd.DataFrame(dict_)
+        if os.path.isfile('request_.csv') :
+            request1 = pd.read_csv("request_.csv")
+            requestfin = pd.concat([request1, request_])
+            os.remove("request_.csv")
+            requestfin.to_csv("request_.csv", index=False)
+        else :
+            request_.to_csv("request_.csv", index=False)
+            requestfin = request_
+        results = pd.DataFrame(np.round(loaded_model.predict_proba(requestfin)*100, 2), columns=labels)
+
     return render_template('index.php', labels = labels, dataframe = results.values)
 
 if __name__ == "__main__" :

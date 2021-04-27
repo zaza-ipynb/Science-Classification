@@ -22,6 +22,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		width:90px;
 	}
 
+	.table-active{
+		font-size:11px;
+		padding-top:0px !important;
+		padding-bottom:0px !important;
+		height:11px !important;
+	}
+
 	</style>
 </head>
 <body>
@@ -39,82 +46,183 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<td colspan="6"></td>
 			</tr>
 			<tr>
-			<form class="">
+				<td colspan="2" class="table-active">
+				KD3.1
+				</td>
+				<td colspan="4" class="table-active">
+				<!-- TABEL KET. KOMPETENSI DASAR -->
+				</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="table-active">
+				KD3.2
+				</td>
+				<td colspan="4" class="table-active">
+				<!-- TABEL KET. KOMPETENSI DASAR -->
+				</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="table-active">
+				KD3.3
+				</td>
+				<td colspan="4" class="table-active">
+				<!-- TABEL KET. KOMPETENSI DASAR -->
+				</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="table-active">
+				KD3.4
+				</td>
+				<td colspan="4" class="table-active">
+				<!-- TABEL KET. KOMPETENSI DASAR -->
+				</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="table-active">
+				KD3.5
+				</td>
+				<td colspan="4" class="table-active">
+				<!-- TABEL KET. KOMPETENSI DASAR -->
+				</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="table-active">
+				KD3.6
+				</td>
+				<td colspan="4" class="table-active">
+				<!-- TABEL KET. KOMPETENSI DASAR -->
+				</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="table-active">
+				KD3.7
+				</td>
+				<td colspan="4" class="table-active">
+				<!-- TABEL KET. KOMPETENSI DASAR -->
+				</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="table-active">
+				KD3.8
+				</td>
+				<td colspan="4" class="table-active">
+				<!-- TABEL KET. KOMPETENSI DASAR -->
+				</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="table-active">
+				KD3.9
+				</td>
+				<td colspan="4" class="table-active">
+				<!-- TABEL KET. KOMPETENSI DASAR -->
+				</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="table-active">
+				KD3.10
+				</td>
+				<td colspan="4" class="table-active">
+				<!-- TABEL KET. KOMPETENSI DASAR -->
+				</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="table-active">
+				KD3.11
+				</td>
+				<td colspan="4" class="table-active">
+				<!-- TABEL KET. KOMPETENSI DASAR -->
+				</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			<form class="" method="post">
 				<td>
 				<div class="form-floating nilaikdw">
                     <label for="floatingInputValue">KD 3.1</label>
-					<input type="email" class="form-control" id="floatingInputValue" placeholder="Value" value="">
+					<input type="number" name="kd1" class="form-control" id="floatingInputValue" placeholder="Value" value="" required>
 				</div>
 				</td>
 				<td>
 				<div class="form-floating nilaikdw">
                     <label for="floatingInputValue">KD 3.2</label>
-                	<input type="email" class="form-control" id="floatingInputValue" placeholder="Value" value="">
+                	<input type="number" name="kd2" class="form-control" id="floatingInputValue" placeholder="Value" value="" required>
 				</div>
 				</td>
 				<td>
 				<div class="form-floating nilaikdw">
 					<label for="floatingInputValue">KD 3.3</label>
-					<input type="email" class="form-control" id="floatingInputValue" placeholder="Value" value="">
+					<input type="number" name="kd3" class="form-control" id="floatingInputValue" placeholder="Value" value="" required>
 				</div>
 				</td>
 				<td>
 				<div class="form-floating nilaikdw">
 					<label for="floatingInputValue">KD 3.4</label>
-					<input type="email" class="form-control" id="floatingInputValue" placeholder="Value" value="">
+					<input type="number" name="kd4" class="form-control" id="floatingInputValue" placeholder="Value" value="" required>
 					
 				</div>
 				</td>
 				<td>
 				<div class="form-floating nilaikdw">
 					<label for="floatingInputValue">KD 3.5</label>
-					<input type="email" class="form-control" id="floatingInputValue" placeholder="Value" value="">
+					<input type="number" name="kd5" class="form-control" id="floatingInputValue" placeholder="Value" value="" required>
 					
 				</div>
 				</td>
 				<td>
 				<div class="form-floating nilaikdw">
 					<label for="floatingInputValue">KD 3.6</label>
-					<input type="email" class="form-control" id="floatingInputValue" placeholder="Value" value="">
+					<input type="number" name="kd6" class="form-control" id="floatingInputValue" placeholder="Value" value="" required>
 					
 				</div>
 				</td>
 				<td>
 				<div class="form-floating nilaikdw">
 					<label for="floatingInputValue">KD 3.7</label>
-					<input type="email" class="form-control" id="floatingInputValue" placeholder="Value" value="">
+					<input type="number" name="kd7" class="form-control" id="floatingInputValue" placeholder="Value" value="" required>
 					
 				</div>
 				</td>
 				<td>
 				<div class="form-floating nilaikdw">
 					<label for="floatingInputValue">KD 3.8</label>
-					<input type="email" class="form-control" id="floatingInputValue" placeholder="Value" value="">
+					<input type="number" name="kd8" class="form-control" id="floatingInputValue" placeholder="Value" value="" required>
 					
 				</div>
 				</td>
 				<td>
 				<div class="form-floating nilaikdw">
 					<label for="floatingInputValue">KD 3.9</label>
-					<input type="email" class="form-control" id="floatingInputValue" placeholder="Value" value="">
+					<input type="number" name="kd9" class="form-control" id="floatingInputValue" placeholder="Value" value="" required>
 					
 				</div>
 				</td>
 				<td>
 				<div class="form-floating nilaikdw">
 					<label for="floatingInputValue">KD 3.10</label>
-					<input type="email" class="form-control" id="floatingInputValue" placeholder="Value" value="">
+					<input type="number" name="kd10" class="form-control" id="floatingInputValue" placeholder="Value" value="" required>
 					
 				</div>
 				</td>
 				<td>
 				<div class="form-floating nilaikdw">
 					<label for="floatingInputValue">KD 3.11</label>
-					<input type="email" class="form-control" id="floatingInputValue" placeholder="Value" value="">
+					<input type="number" name="kd11" class="form-control" id="floatingInputValue" placeholder="Value" value="" required>
 					
 				</div>
 				</td>
-				<td><input type="submit" class="btn btn-success" style="height:54px;"></td>
+				<td><input type="submit" name="submit" class="btn btn-success" style="height:54px;"></td>
 			</form>
 			</tr>
 				<td colspan="12"><h5>RESULT PREDICTION</h5>
